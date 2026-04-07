@@ -1,21 +1,33 @@
 import React from 'react';
 
 const Features = () => {
-  const features = [
-    { title: "Blazing Fast", desc: "Powered by Vite for near-instant rendering and lightning fast hot module replacement." },
-    { title: "Glassmorphism", desc: "Beautiful modern UI elements with subtle background blurs and depth." },
-    { title: "Responsive", desc: "Flawless layout across all screen sizes, from mobile to ultra-wide displays." },
+  const advancedFeatures = [
+    { title: "Turbo Booster", desc: "Berbasis Litespeed, membuat website Anda 32x lebih cepat dibanding Apache.", icon: "⚡" },
+    { title: "Optimized PHP", desc: "Mendukung multi-versi PHP (5.x hingga 8.x) untuk eksekusi script super cepat dengan LSAPI.", icon: "🐘" },
+    { title: "SSD / NVME Storage", desc: "Menjamin kecepatan I/O tertinggi untuk akses file dan query database.", icon: "💾" },
+    { title: "DNS Tersebar di 8 Lokasi", desc: "Resolve domain super cepat di Asia, Eropa, dan US untuk koneksi stabil dari belahan dunia.", icon: "🌍" },
+    { title: "Malware Detection", desc: "Mendeteksi dan membersihkan malware secara otomatis secara realtime.", icon: "🛡️" },
+    { title: "LiteSpeed Cache", desc: "Akses memori instan untuk mengoptimalkan pengunjung dari seluruh penjuru.", icon: "💨" },
   ];
 
   return (
-    <div className="features">
-      {features.map((feature, idx) => (
-        <div key={idx} className="feature-card">
-          <h3>{feature.title}</h3>
-          <p>{feature.desc}</p>
+    <section className="features-section bg-light">
+      <div className="container">
+        <div className="section-title text-center">
+          <h2>Teknologi Canggih Dibalik Server Kami</h2>
+          <p>Kenyamanan Anda adalah prioritas kami. Nikmati fitur canggih dan keamanan mutakhir.</p>
         </div>
-      ))}
-    </div>
+        <div className="features-grid">
+          {advancedFeatures.map((feature, idx) => (
+            <div key={idx} className="feature-card">
+              <div className="feature-icon">{feature.icon}</div>
+              <h3>{feature.title}</h3>
+              <p>{feature.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

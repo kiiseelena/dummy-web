@@ -2,21 +2,36 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="hero">
-      <div className="hero-content">
-        <h1 className="hero-title">
-          <span className="gradient-text">Next-Gen</span> Web Boilerplate
-        </h1>
-        <p className="hero-subtitle">
-          A premium, high-performance starting point for your modern applications. Built with React, Vite, and an eye for exceptional design aesthetics.
-        </p>
-        <div className="hero-buttons">
-          <button className="btn btn-primary">Get Started</button>
-          <button className="btn btn-secondary">View Documentation</button>
+    <section className="hero">
+      <div className="container hero-container">
+        <div className="hero-content">
+          <span className="hero-badge">Promo Spesial Hosting 2026</span>
+          <h1 className="hero-title">
+            Promo Web Hosting Murah Terbaik Indonesia
+          </h1>
+          <p className="hero-subtitle">
+            Layanan hosting dan registrasi domain paling bisa diandalkan dengan support 24 jam. Dilengkapi dengan Turbo Booster agar website Anda lebih cepat diakses hingga 32x.
+          </p>
+          <div className="hero-buttons">
+            <a href="#pricing" className="btn btn-primary btn-lg">Lihat Paket Promo</a>
+            <a href="#" className="btn btn-outline-white btn-lg">Pindah Hosting Gratis</a>
+          </div>
+          <ul className="hero-guarantees mt-4">
+            <li>✓ Gratis Domain</li>
+            <li>✓ Gratis SSL</li>
+            <li>✓ Server Super Cepat</li>
+          </ul>
+        </div>
+        <div className="hero-image">
+          <div className="server-illustration">
+             <div className="server-rack"></div>
+             <div className="server-rack"></div>
+             <div className="server-rack"></div>
+          </div>
         </div>
       </div>
-      <div className="hero-glow"></div>
-    </div>
+      <div className="hero-background"></div>
+    </section>
   );
 };
 

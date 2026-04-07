@@ -1,26 +1,23 @@
 import React from 'react'
+import Header from './components/Header'
 import Hero from './components/Hero'
+import DomainSearch from './components/DomainSearch'
+import Pricing from './components/Pricing'
 import Features from './components/Features'
+import Footer from './components/Footer'
 import './index.css'
 
 function App() {
   return (
     <div className="app-container">
-      <nav className="navbar">
-        <div className="logo">DummyWeb</div>
-        <div className="nav-links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </div>
-      </nav>
+      <Header />
       <main>
         <Hero />
+        <DomainSearch />
+        <Pricing />
         <Features />
       </main>
-      <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} DummyWeb Boilerplate. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   )
 }
