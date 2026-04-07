@@ -1,7 +1,7 @@
 :root {
-  --primary: #f26522; /* Hosting orange brand */
-  --primary-hover: #e2541a;
-  --secondary: #1a2b4c; /* Deep blue trust color */
+  --primary: #6366f1; /* Modern Indigo */
+  --primary-hover: #4f46e5;
+  --secondary: #0f172a; /* Sleek Slate Dark */
   --bg-light: #f8fafc;
   --bg-white: #ffffff;
   --text-main: #334155;
@@ -143,7 +143,7 @@ a { text-decoration: none; }
   transition: transform 0.3s;
 }
 .pricing-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); border-color: var(--primary); }
-.pricing-card.popular { border: 2px solid var(--primary); transform: scale(1.05); box-shadow: 0 20px 40px rgba(242, 101, 34, 0.1); }
+.pricing-card.popular { border: 2px solid var(--primary); transform: scale(1.05); box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15); }
 .pricing-card.popular:hover { transform: scale(1.05) translateY(-5px); }
 .popular-badge {
   position: absolute;
